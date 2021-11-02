@@ -1,0 +1,257 @@
+/*General*/
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    margin: 3%;
+}
+
+h1{
+    font-size: 2.4em;
+    color: #4e5150;
+}
+
+h2{
+    font-size: 1.4em;
+    color: #333333;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+/* PRODUCT SUMMARY */
+.productSummary{
+    background-color: #f2f2f2;
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.product-img{
+    width: 50%;
+    border-radius: 1.2em;
+}
+
+/* PRODUCT CONTAINER */
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 0;
+}
+
+.product-info{
+    width: 40%;
+}
+
+.product-name{
+    font-size: 1.2em;
+    color: #4e5150;
+}
+
+.product-priceContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price{
+    font-size: 1.4em;
+    color: #f2994a;
+}
+
+.product-fullPrice{
+    text-decoration: line-through;
+    color: #4e5150;
+}
+
+.product-qtyContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    border: 2px solid #828282;
+    border-radius: 1.2em;
+}
+
+.product-qty{
+    font-size: 1.6em;
+    color: #333333;
+}
+
+.qty-button{
+    background-color: #e0e0e0;
+    border-radius: .4em;
+    cursor: pointer;
+}
+
+/* TOTAL PRICING */
+.totalPrice-container{
+    margin-top: 20%;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    color: #333333;
+    border-top: #828282 solid 2px;
+    align-items: center;
+}
+
+/* CLIENT INFO */
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+}
+
+.info-name{
+    color: #4f4f4f;
+}
+
+.inputWithIcon{
+  display: flex;
+}
+
+.inputWithIcon input{
+  border: 1px solid #bdbdbd;
+  border-left: 0;
+  padding: 1%;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.inputWithIcon img{
+  border: 1px solid #bdbdbd;
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 1% 0 1% 2%;
+}
+
+.twoFieldsInLine{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
+
+
+/*CHECKBOX*/
+
+.inputChk-container{
+    display: flex;
+    align-items: center;
+}
+
+/*SUBMIT*/
+.submit-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 3% 0;
+}
+
+input[type=submit]{
+    border: none;
+    background-color: #f2994a;
+    color: #ffffff;
+    font-size: 1.6em;
+    padding: 5% 10%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    font-weight: 500;
+    font-size: 14px;
+    color: #bdbdbd;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  footer a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #bdbdbd;
+  }
+
+/* MEDIA QUERIES */
+@media (min-width: 720px){
+    body{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        font-size: 12px;
+        max-width: 1100px;
+        margin: 3% auto;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    article{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    /* PRODUCT SUMMARY */
+    .productSummary{
+        margin-left: 10%;
+    }
+
+    .product-name{
+        font-size: 1.33em;
+    }
+
+    .product-price{
+        font-size: 1.33em;
+    }
+
+    .product-qty{
+        font-size: 1.33em;
+    }
+
+    .total-price-item{
+        font-size: 1.07em;
+    }
+
+    .total-price-number{
+        font-size: 0.833em;
+    }
+
+    /* CLIENT INFO */
+    .client-info{
+        width: 60%;
+    }
+
+    .inputWithIcon input{
+        font-size: 1.33em;
+    }
+
+    input[type=submit]{
+        font-size: 1.33em;
+        padding: 2.5% 5%;
+    }
+}

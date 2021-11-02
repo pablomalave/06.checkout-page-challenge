@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <title>Checkout Challenge</title>
+</head>
+<body>
+  <main>
+    <h1>Checkout</h1>
+    <article class="wrap-Container">
+      <div class="productSummary">
+        <div class="product-container">
+          <img src="img/photo1.png" alt="product1" class="product-img">
+          <div class="product-info">
+            <p class="product-name">Vintage Bag</p>
+             <div class="product-priceContainer">
+              <p class="product-price">$54.99</p>
+              <p class="product-fullPrice">$94.99</p>
+            </div>
+            <div class="product-qtyContainer">
+              <p class="remove qty-button"><img src="img/icons/remove.svg" alt="remove"></p>
+              <p class="product-qty">1</p>
+              <p class="add qty-button"><img src="img/icons/add.svg" alt="add"></p>
+            </div>
+          </div>
+        </div>
+         <div class="product-container">
+            <img src="img/photo2.png" alt="product2" class="product-img">
+            <div class="product-info">
+              <p class="product-name">Levi Shoes</p>
+              <div class="product-priceContainer">
+                <p class="product-price">$74.99</p>
+                <p class="product-fullPrice">$124.99</p>
+              </div>
+              <div class="product-qtyContainer">
+                <p class="remove qty-button"><img src="img/icons/remove.svg" alt="remove"></p>
+                <p class="product-qty">1</p>
+                <p class="add qty-button"><img src="img/icons/add.svg" alt="add"></p>
+              </div>
+            </div>
+        </div>
+        <div class="totalPrice-container">
+          <div class="price">
+            <p class="total-price-item">Shipping</p>
+            <p class="total-price-number">$19</p>
+          </div>
+          <div class="price">
+            <p class="total-price-item">Total</p>
+            <p class="total-price-number">$148.98</p>
+          </div>
+        </div>
+      </div>
+      <div class="client-info">
+        <h2>Contact Information</h2>
+        <div class="input-container">
+          <label class="info-name" for="email">E-mail:</label>
+          <div class="inputWithIcon">
+            <img class="icon" src="img/icons/email.svg" alt="email" />
+            <input type="email" name="email" id="email" placeholder="Enter your email..." />
+           </div>
+        </div>
+        <div class="input-container">
+          <label class="info-name" for="email">Phone:</label>
+          <div class="inputWithIcon">
+            <img class="icon" src="img/icons/phone.svg" alt="phone" />
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone..." />
+           </div>
+        </div>
+        <h2>Shipping Address</h2>
+        <div class="input-container">
+          <label class="info-name" for="email">Full name:</label>
+          <div class="inputWithIcon">
+            <img class="icon" src="img/icons/account_circle.svg" alt="bame" />
+            <input type="text" name="name" id="name" placeholder="Enter your full name..." />
+           </div>
+        </div>
+        <div class="input-container">
+          <label class="info-name" for="email">Address:</label>
+          <div class="inputWithIcon">
+            <img class="icon" src="img/icons/home.svg" alt="address" />
+            <input type="text" name="address" id="address" placeholder="Your address..." />
+           </div>
+        </div>
+        <div class="input-container">
+          <label class="info-name" for="email">City:</label>
+          <div class="inputWithIcon">
+            <img class="icon" src="img/icons/location_city.svg" alt="city" />
+            <input type="text" name="city" id="city" placeholder="Your city..." />
+           </div>
+        </div>
+        <div class="twoFieldsInLine">
+          <div class="input-container">
+            <label class="info-name" for="email">Country:</label>
+            <div class="inputWithIcon">
+              <img class="icon" src="img/icons/location_city.svg" alt="country" />
+              <input type="text" name="country" id="country" placeholder="Your country..." />
+             </div>
+          </div>
+          <div class="input-container">
+            <label class="info-name" for="email">Postal Code:</label>
+            <div class="inputWithIcon">
+              <img class="icon" src="img/icons/markunread_mailbox.svg" alt="postal code" />
+              <input type="text" name="postalCode" id="postalCode" placeholder="Your postal code..." />
+             </div>
+          </div>
+        </div>
+        <div class="inputChk-container">
+          <label for="" class="content-input">
+            <input type="checkbox" class="checbox-chk" />
+            <i></i>
+          </label>
+          <p class="checkbox-text">Save this information for next time</p>
+        </div>
+        <div class="submit-container"><input type="submit" value="Continue" /></div>
+      </div>
+    </article>
+    <footer>created by <a href="#">Pablo Malavé</a> - devchallenges.io</footer>
+  </main>
+  
+</body>
+</html>
