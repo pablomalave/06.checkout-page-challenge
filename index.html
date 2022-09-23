@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/mainStyle.css">
+  <script src="/js/index.js" defer></script>
   <title>Checkout Challenge</title>
 </head>
 <body>
@@ -25,9 +26,9 @@
               <p class="product-fullPrice">$94.99</p>
             </div>
             <div class="product-qtyContainer">
-              <p class="remove qty-button"><img src="img/icons/remove.svg" alt="remove"></p>
+              <p class="remove qty-button" onclick="removeItem(0)"><img src="img/icons/remove.svg" alt="remove"></p>
               <p class="product-qty">1</p>
-              <p class="add qty-button"><img src="img/icons/add.svg" alt="add"></p>
+              <p class="add qty-button" onclick="addItem(0)"><img src="img/icons/add.svg" alt="add"></p>
             </div>
           </div>
         </div>
@@ -40,9 +41,9 @@
                 <p class="product-fullPrice">$124.99</p>
               </div>
               <div class="product-qtyContainer">
-                <p class="remove qty-button"><img src="img/icons/remove.svg" alt="remove"></p>
+                <p class="remove qty-button" onclick="removeItem(1)"><img src="img/icons/remove.svg" alt="remove"></p>
                 <p class="product-qty">1</p>
-                <p class="add qty-button"><img src="img/icons/add.svg" alt="add"></p>
+                <p class="add qty-button" onclick="addItem(1)"><img src="img/icons/add.svg" alt="add"></p>
               </div>
             </div>
         </div>
